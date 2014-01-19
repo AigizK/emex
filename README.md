@@ -1,18 +1,7 @@
 Статистика запросов пользователей
 
-В MasterPage нужно разместить следующий скрипт
-
-<!--EmexInternet counter-->
-<script type="text/javascript">
-<!--
-document.write("<img src='http://emex-stat.ru/stat?l<%= UserID =>;r" +
-escape(document.referrer)+";u"+escape(document.URL)+
-";"+Math.random()+
-"' "+"border='0' width='1' height='1'>")
-//-->
-</script>
-<!--/EmexInternet counter-->
+В MasterPage нужно разместить содержимое из файла **emex-stat-scripts.txt**
 
 При этом следующий участок кода
-<%= UserID =>
+**<%= UserID =>**
 надо заменить на логин пользователя. А если пользователь не авторизован, то вернуть пустую строчку.
